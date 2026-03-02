@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="スタッフインタビュー" stylesheets={['interview.css']} extraFonts={true}>
+  <a href="#top" class="back-to-top">▲</a>
+
+  <section class="first-section">
+    <div class="first-container">
+      <div class="first-text-mori">
+        <h1 class="catchphrase-mori">
+          今日よりも素晴らしい明日へ。<br />
+          更なる高みを求めて
+        </h1>
+        <p class="caption-mori">
+          森医師は整形外科専門医取得後に美容外科へ進み、<br />
+          自身の高難易度症例を担当してきた医師です。<br />
+          脂肪吸引の手術全般を得意とし、安全で満足度の高い<br />
+          治療の提供を信条としています。
+        </p>
+        <div class="dr-neme">
+          <p class="fv-job-title">TIAM CLINIC　副院長</p>
+          <p class="fv-neme-mori">森　紳之介</p>
+        </div>
+      </div>
+      <div class="first-image-mori">
+        <img src="/img/mori-fv.png" alt="メインビジュアル" />
+      </div>
+    </div>
+  </section>
+
+  <section class="interview">
+    <div class="interview-block layout-left-text">
+      <div class="interview-text">
+        <h3>Q. 整形外科から美容外科に進むまでの経緯は？</h3>
+        <p class="caption">
+          もともと千葉大学医学部を卒業後、都内の病院で<br />
+          整形外科を担当していました。<br />
+          怪我や病気の治療を通して「人の生活の質を<br />
+          改善する」ことにやりがいを感じていたのですが、<br />
+          美容医療はさらに一歩踏み込み、「人生を前向きに変える力」があると感じ、挑戦してみたいと思いました。
+        </p>
+      </div>
+      <div class="interview-photo">
+        <img src="/img/Dr-interview-image1.png" alt="インタビュー写真1" />
+      </div>
+    </div>
+
+    <div class="interview-block layout-text-only">
+      <div class="interview-text">
+        <h3>Q. TIAMに入ったきっかけは？</h3>
+        <p class="caption">
+          面接の際に感じたスタッフ同士の距離感の近さや、教育体制の丁寧さが印象的でした。<br />
+          美容外科未経験の私でもしっかり学べると確信できたことが大きな決め手です。
+        </p>
+      </div>
+    </div>
+
+    <div class="interview-block layout-right-text">
+      <div class="interview-text">
+        <h3>Q. 休日の過ごし方は？</h3>
+        <p class="caption">
+          筋トレで体を鍛えるのが趣味ですが、休日は子供と公園で遊ぶことが多いです。<br />
+          リフレッシュできる時間がしっかり取れるので、<br />
+          仕事にも集中できます。
+        </p>
+      </div>
+      <div class="interview-photo">
+        <img src="/img/Dr-interview-image2.png" alt="インタビュー写真2" />
+      </div>
+    </div>
+
+    <div class="interview-block layout-text-only">
+      <div class="interview-text">
+        <h3>Q. 転職して良かったと感じる点は？</h3>
+        <p class="caption">
+          患者様が施術後に鏡を見て笑顔になる瞬間は、整形外科医時代にはなかった喜びです。<br />
+          また、スケジュールが明確で残業も少なく、家族との時間が増えました。
+        </p>
+      </div>
+    </div>
+
+    <div class="interview-block layout-left-text">
+      <div class="interview-text">
+        <h3>Q. クリニックでのやりがいや特徴は？</h3>
+        <p class="caption">
+          脂肪吸引を得意としており、確かな技術で結果<br />
+          を出せることにやりがいを感じます。<br />
+          最新機器の導入や施術の選択肢も多く、医師として<br />
+          常に新しい知識と技術を吸収できる環境です。
+        </p>
+      </div>
+      <div class="interview-photo">
+        <img src="/img/Dr-interview-image3.png" alt="インタビュー写真3" />
+      </div>
+    </div>
+
+    <div class="interview-block layout-text-only">
+      <div class="interview-text">
+        <h3>Q. 最後にメッセージをお願いします。</h3>
+        <p class="caption">
+          美容外科未経験でも、成長意欲があれば必ず活躍できます。<br />
+          患者様の「なりたい自分」を叶えるために、一緒に挑戦してみませんか？
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="profile-section">
+    <div class="profile-container">
+      <div class="profile-image">
+        <img src="/img/mori_image.png" alt="先生の写真" />
+      </div>
+      <div class="profile-text">
+        <h2 class="name">森　紳之介</h2>
+        <div class="career-title">
+          <span>経歴</span>
+          <div class="line"></div>
+        </div>
+        <ul class="career-list">
+          <li>千葉大学医学部卒業</li>
+          <li>関東中央病院 初期研修医</li>
+          <li>東京大学医学部附属病院　整形外科</li>
+          <li>整形外科専門医取得</li>
+          <li>TIAM CLINIC GINZA 入職</li>
+          <li>TIAM CLINIC GINZA 副院長</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

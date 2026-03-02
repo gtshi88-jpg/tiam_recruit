@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import RecruitmentSection from '../components/RecruitmentSection.astro';
+import FlowSteps from '../components/FlowSteps.astro';
+---
+
+<BaseLayout title="【医師】の募集" stylesheets={['recruit.css']}>
+  <a href="#top" class="back-to-top">▲</a>
+
+  <PageHero backgroundImage="/img/dr-hero.jpg" titleEn="Doctor" titleJa="医師" position="hero-center" />
+
+  <section class="dr-about-section">
+    <h2 class="section-title">TIAM CLINICで働く魅力</h2>
+    <p class="section-subtitle">"脂肪吸引のプロ"と呼ばれるためのスキルを磨けます。</p>
+
+    <div class="dr-image">
+      <img src="/img/dr-about-image3.jpg" alt="ドクター紹介メイン画像" />
+    </div>
+
+    <p class="dr-description">
+      TIAM CLINICは、麻酔科医出身の院長が「痛みを最小限に抑える」ことを重視し、<br />
+      小顔形成に特化した施術を提供する美容クリニックです。<br />
+      脂肪吸引や糸リフトといった精緻な施術領域においても、2021年の開院以来、多くの症例実績と厚い信頼を築いております。
+    </p>
+
+    <div class="dr-columns">
+      <div class="dr-col">
+        <img src="/img/FlowSectionImg4.png" alt="ドクター写真1" />
+        <p class="caption">院長による直接指導・技術フィードバック体制</p>
+      </div>
+      <div class="dr-col">
+        <img src="/img/FlowSectionImg5.png" alt="ドクター写真2" />
+        <p class="caption">他ドクターとも切磋逞しあえる環境</p>
+      </div>
+    </div>
+
+    <div class="dr-message">
+      <p>
+        「美容外科医として自信をつけたい」<br />
+        「患者様に感動していただける技術を身につけたい」<br />
+        ──その想い、当院が全力で応援します。<br />
+        脂肪吸引を極めたい方、腫れない糸リフトを学びたい方、ぜひ一緒に挑戦しませんか？<br />
+        あなたのご応募をお待ちしています。
+      </p>
+    </div>
+  </section>
+
+  <section class="cs-job-section">
+    <h2 class="job-title">業務内容</h2>
+    <p class="job-caption">
+      10年後を見据えた美容医療を提供するため、<br />
+      一人ひとりのスタッフがプロフェッショナルとして各業務にあたっています。<br />
+      こちらでは、医師の業務内容をご紹介しています。
+    </p>
+
+    <div class="job-content">
+      <div class="job-list">
+        <ul>
+          <li>カウンセリング<br />(診察)</li>
+          <li>処置・手術</li>
+          <li>術後のアフターケア</li>
+        </ul>
+      </div>
+      <div class="job-image">
+        <img src="/img/Dr-interview-image3.png" alt="カウンセリングイメージ" />
+      </div>
+    </div>
+
+    <div class="job-content reverse">
+      <div class="job-list">
+        <ul>
+          <li>人材教育</li>
+          <li>マネジメント</li>
+          <li>SNS発信等による集客</li>
+        </ul>
+      </div>
+      <div class="job-image">
+        <img src="/img/FlowSectionImg6.png" alt="オペイメージ" />
+      </div>
+    </div>
+  </section>
+
+  <RecruitmentSection jobTitle="医師">
+        <tr>
+          <th>募集資格</th>
+          <td>
+            ■医師免許、臨床研修修了者<br />
+            ※美容系クリニック経験者優遇
+          </td>
+        </tr>
+        <tr>
+          <th>勤務地</th>
+          <td>
+            東京都中央区銀座7−3−7<br />
+            ブランエスパビル　13階
+          </td>
+        </tr>
+        <tr>
+          <th>勤務時間</th>
+          <td>9:50〜19:00（シフト制）</td>
+        </tr>
+        <tr>
+          <th>診療科</th>
+          <td>美容外科、美容皮膚科、形成外科</td>
+        </tr>
+        <tr>
+          <th>給与</th>
+          <td>
+            経験や能力を考慮いたします。<br />
+            ※前職以上の給与保証をしています。詳しくはお問合せください。<br />
+            ※研修期間3～6カ月あり。
+          </td>
+        </tr>
+        <tr>
+          <th>雇用形態</th>
+          <td>常勤、非常勤</td>
+        </tr>
+        <tr>
+          <th>研修期間</th>
+          <td>6ヶ月 ※研修期間は有期雇用契約</td>
+        </tr>
+        <tr>
+          <th>福利厚生</th>
+          <td>
+            ・健康保険<br />
+            ・厚生年金<br />
+            ・産休育児休暇あり<br />
+            ・制服貸与
+          </td>
+        </tr>
+        <tr>
+          <th>その他休暇</th>
+          <td>
+            ・週休2日制度<br />
+            ・有給休暇(法定通り付与)<br />
+            ・年間公休108日~120日(月9日or月10日で選択可能）<br />
+            ・勤続1年以上で有休、公休とは別に1年ごとにリフレッシュ休暇３日付与
+          </td>
+        </tr>
+  </RecruitmentSection>
+
+  <FlowSteps />
+
+  <a href="#top" class="back-to-top">▲</a>
+</BaseLayout>

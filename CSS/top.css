@@ -1,0 +1,542 @@
+/* css/top.css - トップページ専用 */
+
+/* =========================================
+   First View Section (ファーストビュー)
+   ========================================= */
+.first-section {
+  width: 100%;
+  padding: 80px 0;
+  background: url('../img/TIAM_LP_background\ 2.png') no-repeat center center/cover;
+  /* 文字色が見えるように背景調整が必要な場合 */
+  color: #fff;
+}
+
+.first-container {
+  max-width: 1200px; /* 1440pxだと広すぎる場合があるため調整 */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 左右に配置 */
+  gap: 60px;
+  padding: 0 20px;
+}
+
+.first-text {
+  flex: 1; /* 左側50% */
+}
+
+.first-image {
+  flex: 1; /* 右側50% */
+}
+
+.first-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.catchphrase {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 40px; /* 55pxだとスマホで崩れやすいため調整 */
+  font-weight: 900;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  letter-spacing: 0.1em;
+}
+
+.caption {
+  font-size: 16px;
+  line-height: 2;
+  font-family: "Zen Old Mincho", serif;
+  letter-spacing: 0.05em;
+}
+
+/* =========================================
+   About Section
+   ========================================= */
+.about-section {
+  padding: 100px 20px;
+  background: url('../img/TIAM_LP_background\ 2.png') no-repeat center center/cover;
+  color: #fff;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  color: rgba(255,255,255,0.2); /* 背景に溶け込むような色 */
+  margin-bottom: -30px; /* タイトルと重ねる演出 */
+  line-height: 1;
+}
+
+.about-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-family: "Zen Old Mincho", serif;
+  line-height: 1.4;
+}
+
+.about-caption {
+  font-size: 15px;
+  line-height: 2.2;
+}
+
+.about-director {
+  flex: 1;
+  text-align: center;
+}
+
+.director-photo {
+  max-width: 80%; /* 写真が大きすぎないように */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.director-name {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+
+/* =========================================
+   Philosophy Section
+   ========================================= */
+.philosophy-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff; /* 背景色を追加 */
+}
+
+.philosophy-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  color: #BFA455; /* ゴールド系アクセント */
+  margin-bottom: 10px;
+}
+
+.philosophy-subheading {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  margin-bottom: 60px;
+  color: #666;
+}
+
+.philosophy-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 80px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 逆配置用クラス */
+.philosophy-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.philosophy-text {
+  flex: 1;
+  text-align: left;
+}
+
+.philosophy-text h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: "Zen Old Mincho", serif;
+  border-left: 4px solid #BFA455;
+  padding-left: 15px;
+}
+
+.philosophy-caption p {
+  font-size: 15px;
+  line-height: 2;
+  color: #444;
+}
+
+.philosophy-image {
+  flex: 1;
+}
+
+.philosophy-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* =========================================
+   Job Section (Recruit)
+   ========================================= */
+.job-section {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.job-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.job-subheading {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  margin-bottom: 60px;
+  color: #666;
+}
+
+.job-container {
+  background: #fff;
+  margin: 0 auto 40px;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 1000px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.job-container:hover {
+  transform: translateY(-5px);
+}
+
+.job-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.job-image {
+  flex: 1;
+}
+
+.job-image img {
+  width: 100%;
+  border-radius: 8px;
+  height: 250px; /* 高さ揃え */
+  object-fit: cover;
+}
+
+.job-text {
+  flex: 1.2;
+  text-align: left;
+}
+
+.job-subtitle {
+  font-family: "Cormorant Garamond", serif;
+  color: #BFA455;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.job-text h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-family: "Zen Old Mincho", serif;
+}
+
+.job-caption {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* ボタンデザイン */
+.job-button {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid #333;
+  color: #333;
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.1em;
+  transition: all 0.3s;
+}
+
+.job-button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.arrow-icon {
+  margin-left: 10px;
+}
+
+/* スタッフインタビューへのリンク */
+.interview-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.interview-frame {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.interview-frame img {
+  max-width: 100%;
+  border-radius: 12px;
+  filter: brightness(0.7); /* 少し暗くして文字を目立たせる */
+  transition: 0.3s;
+}
+
+.interview-frame:hover img {
+  filter: brightness(0.9);
+}
+
+.interview-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.interview-text h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   Reasons Section (選ばれる理由)
+   ========================================= */
+.reason-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.reason-heading h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.reason-image img {
+  max-width: 1000px;
+  width: 100%;
+  margin: 40px auto;
+  border-radius: 8px;
+}
+
+.btn-check {
+  display: inline-block;
+  background: #BFA455;
+  color: #fff;
+  padding: 15px 50px;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn-check:hover {
+  background: #9A833A;
+  transform: scale(1.05);
+}
+
+/* =========================================
+   Flow Section (Top簡易版)
+   ========================================= */
+.flow-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.flow-title {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.flow-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flow-card {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border-top: 4px solid #BFA455;
+}
+
+.step-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  color: #BFA455;
+  margin-bottom: 10px;
+}
+
+.step-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.step-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.flow-entry {
+  text-align: center;
+  padding: 60px 0;
+  background: #fff;
+}
+
+.entry-btn {
+  display: inline-block;
+  background-color: #BAB54A;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 80px;
+  border-radius: 50px;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(186, 181, 74, 0.4);
+}
+
+.entry-btn:hover {
+  background-color: #9A833A;
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   レスポンシブ対応 (スマホ)
+   ========================================= */
+@media (max-width: 768px) {
+  /* レイアウトを縦並びにする */
+  .first-container,
+  .about-container,
+  .philosophy-container,
+  .philosophy-container.reverse,
+  .job-content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  /* 画像の順序制御（スマホでは画像を上にしたい場合など） */
+  .first-image, .job-image {
+    order: -1; /* 画像を先に表示 */
+  }
+
+  .first-image img, .about-director img, .philosophy-image img, .job-image img {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .catchphrase { font-size: 28px; }
+  .about-heading { font-size: 40px; }
+  .about-title { font-size: 24px; }
+  
+  /* グリッドを1列に */
+  .flow-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .job-container {
+    padding: 20px;
+  }
+  
+  .entry-btn {
+    width: 90%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+/* =========================================
+   視認性向上と追加スタイリング
+   ========================================= */
+/* コアメッセージのスタイル */
+.core-message-box p {
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 1.2rem; /* 少し大きく */
+    line-height: 1.8;
+    font-weight: 600;
+    /* ブランドカラーのゴールドを採用し、視認性を確保 */
+    color: #C5A059; 
+    margin-bottom: 24px;
+    /* 少し輝きを持たせるテキストシャドウ */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* メインビジュアルのキャッチコピーも微調整 */
+.first-text h1.catchphrase {
+    color: #fff; /* 白でハッキリと */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* 基本テキストの色も確認 */
+.first-text p.caption {
+    color: #f0f0f0; /* 完全な白より少し目に優しいオフホワイト */
+}
+
+
+/* =========================================
+   モダンなアニメーション設定 (スクロール検知)
+   ========================================= */
+
+/* 共通の初期状態: 見えなくしておく */
+.animate-on-scroll {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* 心地よいイージング */
+}
+
+/* 下からフワッと浮き上がる動き */
+.fade-up {
+    transform: translateY(30px);
+}
+
+/* 左からスライド */
+.fade-left {
+    transform: translateX(-30px);
+}
+
+/* 右からスライド */
+.fade-right {
+    transform: translateX(30px);
+}
+
+/* 画面内に入った時の状態（JSで付与） */
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* 順番に表示させるための遅延設定 */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }

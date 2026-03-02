@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="選ばれる理由" stylesheets={['reason.css']}>
+  <section>
+    <div class="reasons-hero">
+      <h1 class="reasons-hero-title">Reasons</h1>
+      <p class="reasons-hero-subtitle">選ばれる理由</p>
+    </div>
+  </section>
+
+  <section class="reasons-section">
+    <div class="reasons-summary">
+      <div class="reason-item">01.<br>チームワーク重視の職場</div>
+      <div class="reason-item">02.<br>キャリアアップを後押しする環境</div>
+      <div class="reason-item">03.<br>未経験からでも安心の研修制度</div>
+      <div class="reason-item">04.<br>月9〜10日休み & 残業ほぼなし</div>
+      <div class="reason-item">05.<br>社員割引で美容施術が受けられる</div>
+    </div>
+
+    <div class="reasons-detail">
+      <div class="reason-box">
+        <div class="reason-number">01</div>
+        <div class="reason-content left">
+          <div class="reason-text">
+            <h3>チームワーク重視の職場</h3>
+            <p>
+              スタッフ同士の仲が良く、困ったときには助け合える環境。<br>
+              風通しのよい職場なので、安心して長く働き続けることができます。
+            </p>
+          </div>
+          <div class="reason-img">
+            <img src="/img/image-5.png" alt="女性キャリア">
+          </div>
+        </div>
+      </div>
+
+      <div class="reason-box">
+        <div class="reason-number">02</div>
+        <div class="reason-content right">
+          <div class="reason-text">
+            <h3>キャリアアップを後押しする環境</h3>
+            <p>
+              美容の専門知識や接客スキルを学べる機会が豊富。<br>
+              経験を積むほどにキャリアの幅も広がり、自分自身の成長を実感できます。
+            </p>
+          </div>
+          <div class="reason-img">
+            <img src="/img/day-image2.png" alt="アットホーム環境">
+          </div>
+        </div>
+      </div>
+
+      <div class="reason-box">
+        <div class="reason-number">03</div>
+        <div class="reason-content left">
+          <div class="reason-text">
+            <h3>未経験からでも安心の研修制度</h3>
+            <p>
+              美容医療の知識がなくても大丈夫。<br>
+              入職後は丁寧な研修と先輩スタッフのサポートで、未経験からでも安心して成長できます。
+            </p>
+          </div>
+          <div class="reason-img">
+            <img src="/img/reason-image5.jpg" alt="研修制度">
+          </div>
+        </div>
+      </div>
+
+      <div class="reason-box">
+        <div class="reason-number">04</div>
+        <div class="reason-content right">
+          <div class="reason-text">
+            <h3>月9~10日休み&残業ほぼなし</h3>
+            <p>
+              オンオフを大切にできる勤務体制。<br>
+              月9〜10日の休みと残業ほぼゼロで、プライベートや家庭との両立も無理なく実現できます。
+            </p>
+          </div>
+          <div class="reason-img">
+            <img src="/img/Dr-interview-image1.png" alt="アットホーム環境">
+          </div>
+        </div>
+      </div>
+
+      <div class="reason-box">
+        <div class="reason-number">05</div>
+        <div class="reason-content left">
+          <div class="reason-text">
+            <h3>社員割引による美容施術</h3>
+            <p>
+              自分たちが「本当に良い」と思った施術しか提供しません。<br>
+              社員割引で実際に施術を受け、効果やダウンタイムを自ら体験しているからこそ、<br>
+              患者様に嘘のないリアルな提案が可能です。<br>
+              「働きながらキレイになる」は、プロとしての身だしなみでもあります。
+            </p>
+          </div>
+          <div class="reason-img">
+            <img src="/img/top_image.jpg" alt="美容施術">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="survey-section">
+    <h2 class="survey-title">クリニックで働くスタッフに聞いた満足度アンケート</h2>
+    <div class="survey-subtitle">働く満足度は？</div>
+    <div class="survey-grid">
+      <div class="survey-item">
+        <p class="survey-question">① 業界未経験で入職しましたか？</p>
+        <div class="circle" data-percent="56.5"><span>56.5%</span></div>
+      </div>
+      <div class="survey-item">
+        <p class="survey-question">② 今の業務にやりがいはありますか？</p>
+        <div class="circle" data-percent="86.9"><span>86.9%</span></div>
+      </div>
+      <div class="survey-item">
+        <p class="survey-question">③ 教育制度が整っていますか？</p>
+        <div class="circle" data-percent="70.9"><span>70.9%</span></div>
+      </div>
+      <div class="survey-item">
+        <p class="survey-question">④ 今の給与に満足していますか？</p>
+        <div class="circle" data-percent="89.9"><span>89.9%</span></div>
+      </div>
+      <div class="survey-item">
+        <p class="survey-question">⑤ 前職よりも残業は少ないですか？</p>
+        <div class="circle" data-percent="96.9"><span>96.9%</span></div>
+      </div>
+      <div class="survey-item">
+        <p class="survey-question">⑥ 前職よりも休みはとりやすいですか？</p>
+        <div class="circle" data-percent="77.9"><span>77.9%</span></div>
+      </div>
+      <div class="survey-item">
+        <p class="survey-question">⑦ 家族や友人にオススメしたいクリニックですか？</p>
+        <div class="circle" data-percent="96.9"><span>96.9%</span></div>
+      </div>
+      <div class="survey-item">
+        <p class="survey-question">⑧ 社員割引を利用したことはありますか？</p>
+        <div class="circle" data-percent="98.4"><span>98.4%</span></div>
+      </div>
+      <div class="survey-item">
+        <p class="survey-question">⑨ 美容の知識や接遇は身につきますか？</p>
+        <div class="circle" data-percent="95.9"><span>95.9%</span></div>
+      </div>
+    </div>
+    <div class="flow-entry">
+      <a href="https://line.me/R/ti/p/@870ibnwa" class="entry-btn">エントリーする</a>
+    </div>
+  </section>
+
+  <a href="#top" class="back-to-top">▲</a>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", function() {
+      const animateCircle = (circle) => {
+        const targetPercent = parseFloat(circle.getAttribute('data-percent'));
+        const duration = 2000;
+        const span = circle.querySelector('span');
+        let startTime = null;
+
+        const step = (timestamp) => {
+          if (!startTime) startTime = timestamp;
+          const progress = timestamp - startTime;
+          let percentage = Math.min(progress / duration, 1);
+          const ease = (x) => x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
+          let currentVal = targetPercent * ease(percentage);
+          circle.style.background = `conic-gradient(#BFA455 0% ${currentVal}%, #e0e0e0 ${currentVal}% 100%)`;
+          if (span) span.textContent = currentVal.toFixed(1) + '%';
+          if (percentage < 1) window.requestAnimationFrame(step);
+        };
+        window.requestAnimationFrame(step);
+      };
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCircle(entry.target);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "0px", threshold: 0.2 });
+
+      document.querySelectorAll('.circle').forEach(circle => {
+        circle.style.background = `conic-gradient(#BFA455 0% 0%, #e0e0e0 0% 100%)`;
+        const span = circle.querySelector('span');
+        if (span) span.textContent = '0.0%';
+        observer.observe(circle);
+      });
+    });
+  </script>
+</BaseLayout>

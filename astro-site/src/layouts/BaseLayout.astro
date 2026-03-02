@@ -1,0 +1,51 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  /** 追加のCSSファイル（common.css 以外）。例: ['top.css'] または ['recruit.css'] */
+  stylesheets?: string[];
+  /** フォント（トップページ用にCormorant Unicaseを追加する場合） */
+  extraFonts?: boolean;
+}
+
+const { title, stylesheets = [], extraFonts = false } = Astro.props;
+const siteTitle = 'TIAM CLINIC採用サイト | 医師・看護師・受付・カウンセラー求人・転職';
+const fullTitle = `${title} | ${siteTitle}`;
+---
+
+<!doctype html>
+<html dir="ltr" lang="ja" prefix="og: h#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <link rel="icon" href="/img/ikon.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href={
+        extraFonts
+          ? 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Zen+Old+Mincho&display=swap'
+          : 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Zen+Old+Mincho&display=swap'
+      }
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/common.css" />
+    {stylesheets.map((css) => (
+      <link rel="stylesheet" href={`/css/${css}`} />
+    ))}
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <script src="/js/header.js" is:inline></script>
+    <script src="/js/site.js" is:inline></script>
+    <script src="/js/app.js" is:inline></script>
+  </body>
+</html>

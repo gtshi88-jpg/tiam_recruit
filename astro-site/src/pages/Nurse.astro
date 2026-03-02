@@ -1,0 +1,339 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import RecruitmentSection from '../components/RecruitmentSection.astro';
+import FlowSteps from '../components/FlowSteps.astro';
+---
+
+<BaseLayout title="【看護師】の募集" stylesheets={['recruit.css']}>
+  <PageHero backgroundImage="/img/ns-hero.jpg" titleEn="Nurse" titleJa="看護師" position="hero-left">
+    <nav class="page-index">
+      <ul>
+        <li><a href="#appeal-section">働くやりがい・魅力</a></li>
+        <li><a href="#person-section">求める人材</a></li>
+        <li><a href="#person-features">業務内容</a></li>
+        <li><a href="#training-section">研修制度</a></li>
+        <li><a href="#recruitment-section">募集要項</a></li>
+      </ul>
+    </nav>
+  </PageHero>
+
+  <section class="appeal-section" id="appeal-section">
+    <div class="appeal-container">
+      <div class="appeal-images">
+        <img src="/img/appeal-image1.png" alt="やりがいイメージ1" />
+      </div>
+      <div class="appeal-text">
+        <h2 class="appeal-title">TIAMで働くやりがい魅力</h2>
+        <p class="appeal-caption">
+          TIAM CLINICは、「小顔と美肌の美容クリニック」をコンセプトに、更なる美を追求する患者様から選ばれております。<br />
+          10年後も通ってよかったと言っていただける美容の町医者を目指しているため、施術をして終了ではなく、患者様と一緒に"思い描く理想の未来像"を計画しながら"なりたい自分のサポート"をしています。<br />
+          施術を終え、キレイになられた患者様に信頼され、「次はこの施術をしてみたい！」とおっしゃっていただいた喜びは何者にも代えがたいです。
+        </p>
+      </div>
+    </div>
+
+    <div class="appeal-container reverse">
+      <div class="appeal-images">
+        <img src="/img/appeal-image2.png" alt="やりがいイメージ2" />
+      </div>
+      <div class="appeal-text">
+        <p class="appeal-caption">
+          また、世界最先端の治療や技術はすぐに導入するスピード感があるため、新しい技術にすぐに触れることができます。<br />
+          その度に、施術方法やメカニズムを学習する必要がありますが、患者様への提案の幅が広がることはもちろん、自分自身がキレイになる知識やスキルのブラッシュアップができます。<br />
+          リピーターの方が大半を占めるクリニックということもあり、自分が行った施術や提案によって、日に日にキレイになっていく患者様から「このクリニックに通ってよかった」とポジティブな言葉を直接いただけるやりがいのある職場です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="person-section" id="person-section">
+    <div class="person-section__overlay">
+      <h2 class="person-section__heading">求める人材</h2>
+
+      <div class="person-section__content">
+        <div class="person-section__caption">
+          <h3 class="person-section__caption-title">美容に興味があること</h3>
+          <p class="person-section__caption-subtitle">
+            お客様へ質の高い美容医療をお届けするためには、<br />
+            私たちスタッフ自身が"美"に対して強い関心と探究心を持つことが大切です。<br />
+            美容外科に来られる方や一緒に働く仲間は、美意識の高い方が多いため、<br />
+            自然と学びを深められる環境があります。<br />
+            興味を持って取り組むことで、知識やスキルは無理なく身についていきます。
+          </p>
+        </div>
+        <div class="person-section__image">
+          <img src="/img/DSC09518-Edit.JPG" alt="キャプション用イメージ" />
+        </div>
+      </div>
+
+      <div class="person-section__content person-section__content--reverse">
+        <div class="person-section__caption">
+          <h3 class="person-section__caption-title">向上心があること</h3>
+          <p class="person-section__caption-subtitle">
+            美容医療は日々進化しています。<br />
+            新しい知識や技術を吸収しようとする向上心が、<br />
+            患者様へより良いケアを提供する力になります。
+          </p>
+        </div>
+        <div class="person-section__image">
+          <img src="/img/person_image_ns.jpg" alt="キャプション用イメージ" />
+        </div>
+      </div>
+
+      <div class="person-section__content">
+        <div class="person-section__caption">
+          <h3 class="person-section__caption-title">チームワークを大切にできること</h3>
+          <p class="person-section__caption-subtitle">
+            どれだけ優秀なスタッフが揃っていても、各自が異なる方向に進んでいては、<br />
+            仕事をスムーズに進めることはできません。<br />
+            チーム内で情報を適切に共有し、円滑に連携できる方を求めています。
+          </p>
+        </div>
+        <div class="person-section__image">
+          <img src="/img/person_image3.png" alt="キャプション用イメージ" />
+        </div>
+      </div>
+
+      <div class="person-section__content person-section__content--reverse">
+        <div class="person-section__caption">
+          <h3 class="person-section__caption-title">
+            相手の意図をくみ取り、適切に<br />
+            対応できること
+          </h3>
+          <p class="person-section__caption-subtitle">
+            スタッフ同士で円滑に連携したり、患者さまの声にしっかり耳を傾けること、<br />
+            必要に応じてこちらから積極的に声をかけることも大切です。<br />
+            人とのコミュニケーションの重要性を理解し、実践できる方を歓迎します。
+          </p>
+        </div>
+        <div class="person-section__image">
+          <img src="/img/person_image5.png" alt="キャプション用イメージ" />
+        </div>
+      </div>
+
+      <div class="person-section__content">
+        <div class="person-section__caption">
+          <h3 class="person-section__caption-title">
+            10年後も通ってよかったと<br />
+            言ってもらえるような<br />
+            親身な対応ができること
+          </h3>
+          <p class="person-section__caption-subtitle">
+            当院のナースは単なる施術者ではなく、患者様の理想の未来を導く<br />
+            サポーターとして末長くお付き合いできるような方を求めています。
+          </p>
+        </div>
+        <div class="person-section__image">
+          <img src="/img/nurse-guide-img3.jpg" alt="キャプション用イメージ" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="person-features" id="person-features">
+    <div class="container">
+      <h2 class="work-title">業務内容</h2>
+      <h3 class="section-subtitle">
+        TIAMが最も大切にしているのは、三方(患者様、スタッフ、社会)<br />
+        の結果と満足の追求です。
+      </h3>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3 class="feature-title">美容施術やケア</h3>
+          <p class="feature-subtitle">
+            脱毛や美肌治療などの医療レーザー照射、注射や点滴などの施術を行います。<br />
+            医療レーザーを用いた施術は年々増加しており、看護師がメインで行う施術も多くあります。
+          </p>
+          <img src="/img/nurse-treatment-img2.jpg" alt="Feature 1" />
+        </div>
+
+        <div class="feature-item">
+          <h3 class="feature-title">オペ介助/医療器具の管理</h3>
+          <p class="feature-subtitle">
+            医師の診療や手術を支える介助業務に加え、術前準備や術後ケア、<br />
+            器具の洗浄・保管など安全管理も美容看護師の役割です。<br />
+            手術の流れや器具を理解し、医師がスムーズに施術できるよう先回りしてサポートします。<br />
+            当院では約6か月の研修を設け、基礎から学べる体制を整えているため、美容医療やオペ介助未経験の方も安心です。
+          </p>
+          <img src="/img/%20Business%20content2.png" alt="Feature 2" />
+        </div>
+
+        <div class="feature-item">
+          <h3 class="feature-title">患者様へご提案</h3>
+          <p class="feature-subtitle">
+            主に医師やカウンセラーが患者様へのご提案を担当いたしますが、看護師も施術の過程でご希望やお悩みを丁寧に伺い、適切なサポートを行うことがあります。<br />
+            また、美容分野で培った知識を活かし、最適な施術方法やドクターズコスメのご案内をさせていただくこともございます。
+          </p>
+          <img src="/img/%20Business%20content4.png" alt="Feature 3" />
+        </div>
+
+        <div class="feature-item">
+          <h3 class="feature-title">後輩の指導・育成</h3>
+          <p class="feature-subtitle">
+            新人教育を担うプリセプターの役割は、後輩に対して看護技術や業務の流れを伝えるだけでなく、<br />
+            患者さまへの接遇や社会人としての姿勢といった基礎も示し、現場での実践を通して成長を支援することにあります。<br />
+            その過程で、自らも知識や経験を整理し直す機会となり、指導者としての視点を養うことで、看護師としてさらに高い段階へと進む貴重なステップとなります。
+          </p>
+          <img src="/img/nurse-guidance-img.jpg" alt="Feature 4" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="day-section">
+    <h2 class="day-title">1日の流れ</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="time-circle">09:50</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">朝礼・開院準備</h3>
+          <p class="timeline-caption">スタッフ全員で朝礼を行い、<br />当日の準備を整えます。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">10:00</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">受付開始</h3>
+          <p class="timeline-caption">1日の予約確認、オペの準備をします</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">11:00</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">オペ介助</h3>
+          <p class="timeline-caption">
+            手術中に医師が必要とする器械を、医師の指示<br />
+            に従って迅速かつ正確に手渡します。
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">12:00</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">お客様ご帰宅のご案内</h3>
+          <p class="timeline-caption">オペ後のアフターケアを行います。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">13:00</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">昼休憩</h3>
+          <p class="timeline-caption">しっかり休んで午後に備えます。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">15:30</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">レーザー照射</h3>
+          <p class="timeline-caption">
+            脱毛やトーニングなどのレーザー治療<br />
+            を行います。
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">18:00</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">終業準備</h3>
+          <p class="timeline-caption">医療機器の洗浄や次回予約確認を行います。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">18:50</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">終礼・閉院準備</h3>
+          <p class="timeline-caption">片付け・翌日の予約確認を行い退勤。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="training-section" id="training-section">
+    <h2 class="training-title">研修制度</h2>
+    <div class="training-cards">
+      <div class="training-card">
+        <h3 class="training-subtitle">基礎研修</h3>
+        <p class="training-text">
+          独自のカリキュラムに基づき、座学・実技ともに当院の厳しい合格基準を満たすまで、患者様を担当することはありません。<br />
+          未経験の方でも、自信を持って「プロ」と言えるレベルになるまで、先輩スタッフが責任を持って育て上げます。
+        </p>
+      </div>
+      <div class="training-card">
+        <h3 class="training-subtitle">OJT研修</h3>
+        <p class="training-text">
+          実際の業務現場で先輩社員に同行し、仕事の流れを学びながらスキルを身につけます。<br />
+          個別指導を通じて、不安を解消しながら実践的に成長していける研修です。
+        </p>
+      </div>
+      <div class="training-card">
+        <h3 class="training-subtitle">実践研修</h3>
+        <p class="training-text">
+          独り立ちに向けて実際の業務を一人で行い、習得度を確認します。<br />
+          必要に応じてフィードバックを受けながら、即戦力として成長する段階です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <RecruitmentSection jobTitle="看護師" sectionId="recruitment-section">
+        <tr>
+          <th>募集資格</th>
+          <td>
+            看護師資格をお持ちの方<br />
+            夜勤なし、美容未経験者歓迎
+          </td>
+        </tr>
+        <tr>
+          <th>勤務地</th>
+          <td>
+            東京都中央区銀座7−3−7<br />
+            ブランエスパビル　13階
+          </td>
+        </tr>
+        <tr>
+          <th>勤務時間</th>
+          <td>9:50〜19:00（シフト制）</td>
+        </tr>
+        <tr>
+          <th>給与</th>
+          <td>
+            月給40万円～＋インセンティブ（契約社員 月給35万円～）<br />
+            月給にはみなし残業代代（20時間分）を含みます。超過分別途支給<br />
+            研修期間3~6ヶ月あり<br />
+            インセンティブは本採用後より支給します。
+          </td>
+        </tr>
+        <tr>
+          <th>雇用形態</th>
+          <td>正社員</td>
+        </tr>
+        <tr>
+          <th>研修期間</th>
+          <td>6ヶ月 ※研修期間は有期雇用契約</td>
+        </tr>
+        <tr>
+          <th>福利厚生</th>
+          <td>
+            ・健康保険<br />
+            ・厚生年金<br />
+            ・産休育児休暇あり<br />
+            ・制服貸与
+          </td>
+        </tr>
+        <tr>
+          <th>その他休暇</th>
+          <td>
+            ・週休2日制度<br />
+            ・有給休暇(法定通り付与)<br />
+            ・年間公休108日~120日(月9日or月10日で選択可能）<br />
+            ・勤続1年以上で有休、公休とは別に1年ごとにリフレッシュ休暇３日付与
+          </td>
+        </tr>
+  </RecruitmentSection>
+
+  <FlowSteps />
+
+  <a href="#top" class="back-to-top">▲</a>
+</BaseLayout>

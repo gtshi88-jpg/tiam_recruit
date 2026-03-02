@@ -1,0 +1,16 @@
+---
+interface Props {
+  jobTitle: string;
+  sectionId?: string;
+}
+const { jobTitle, sectionId = 'recruitment-section' } = Astro.props;
+---
+<section class="recruitment-section" id={sectionId}>
+  <div class="container">
+    <h2 class="jobsection-title">募集要項</h2>
+    <div class="job-titlebox">{jobTitle}</div>
+    <table class="recruitment-table">
+      <slot />
+    </table>
+  </div>
+</section>

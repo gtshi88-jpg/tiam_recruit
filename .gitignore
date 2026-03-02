@@ -1,0 +1,23 @@
+# build output
+dist/
+
+# dependencies
+node_modules/
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Astro
+.astro/
+
+# logs
+*.log

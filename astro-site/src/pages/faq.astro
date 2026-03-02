@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="よくある質問" stylesheets={['faq.css']}>
+  <a href="#top" class="back-to-top">▲</a>
+
+  <section>
+    <div class="page-hero" style="background-image: url('/img/dr-about-image3.jpg');">
+      <h1>FAQ</h1>
+      <p>よくある質問</p>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <h2 class="faq-heading">応募方法・面接について</h2>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <div><span class="q-circle">Q</span>応募に必要な書類はなんですか？</div>
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        <span class="a-circle">A</span>
+        <div>
+          履歴書及び職務経歴書をご用意ください。<br />
+          書類到着後、選考通過者にのみ面接の日程調整の連絡を致します。<br />
+          応募書類は返却いたしませんのでご了承ください。
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <div><span class="q-circle">Q</span>見た目の基準はありますか？</div>
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        <span class="a-circle">A</span>
+        <div>
+          見た目の選考基準は設けておりません。美容クリニックはサービス業ですので、清潔感を大事にしております。<br />
+          素敵な笑顔で世界中からいらっしゃる患者さまのおもてなしができる方を募集しております。
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <div><span class="q-circle">Q</span>未経験ですが大丈夫ですか？</div>
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        <span class="a-circle">A</span>
+        <div>
+          未経験の方でも、個々の習得度に応じて仕事をお任せしていきますので安心してステップアップしてください。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <h2 class="faq-heading">採用決定後について</h2>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <div><span class="q-circle">Q</span>採用後は最短どのくらいで勤務開始できますか？</div>
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        <span class="a-circle">A</span>
+        <div>
+          入職可能な日を相談の上、採用決定次第、希望の日から勤務が可能です。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <h2 class="faq-heading">クリニックについて</h2>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <div><span class="q-circle">Q</span>クリニックの雰囲気を教えてください。</div>
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        <span class="a-circle">A</span>
+        <div>
+          院内は明るく清潔感にあふれており、互いを尊重したコミュニケーションとサポートによって、新人スタッフも馴染みやすく、楽しく働ける環境を目指しています。
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

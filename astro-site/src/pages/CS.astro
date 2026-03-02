@@ -1,0 +1,317 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import RecruitmentSection from '../components/RecruitmentSection.astro';
+import FlowSteps from '../components/FlowSteps.astro';
+---
+
+<BaseLayout title="【受付/カウンセラー】の募集" stylesheets={['recruit.css']}>
+  <PageHero backgroundImage="/img/CS-HERO.png" titleEn="Counselor" titleJa="受付/カウンセラー" position="hero-center">
+    <nav class="page-index">
+      <ul>
+        <li><a href="#appeal-section">働くやりがい・魅力</a></li>
+        <li><a href="#person-section">求める人材</a></li>
+        <li><a href="#person-features">業務内容</a></li>
+        <li><a href="#training-section">研修制度</a></li>
+        <li><a href="#recruitment-section">募集要項</a></li>
+      </ul>
+    </nav>
+  </PageHero>
+
+  <section class="appeal-section" id="appeal-section">
+    <div class="appeal-container">
+      <div class="appeal-images">
+        <img src="/img/appeal-image1.png" alt="やりがいイメージ1" />
+      </div>
+      <div class="appeal-text">
+        <h2 class="appeal-title">TIAMで働くやりがい魅力</h2>
+        <p class="appeal-caption">
+          TIAM CLINICは、「小顔と美肌の美容クリニック」をコンセプトに、更なる美を追求する患者様から選ばれております。<br />
+          10年後も通ってよかったと言っていただける美容の町医者を目指しているため、施術をして終了ではなく、患者様と一緒に"思い描く理想の未来像"を計画しながら"なりたい自分のサポート"をしています。<br />
+          施術を終え、キレイになられた患者様に信頼され、「次はこの施術をしてみたい！」とおっしゃっていただいた喜びは何者にも代えがたいです。
+        </p>
+      </div>
+    </div>
+
+    <div class="appeal-container reverse">
+      <div class="appeal-images">
+        <img src="/img/appeal-image2.png" alt="やりがいイメージ2" />
+      </div>
+      <div class="appeal-text">
+        <p class="appeal-caption">
+          また、世界最先端の治療や技術はすぐに導入するスピード感があるため、新しい技術にすぐに触れることができます。<br />
+          その度に、施術方法やメカニズムを学習する必要がありますが、患者様への提案の幅が広がることはもちろん、自分自身がキレイになる知識やスキルのブラッシュアップができます。<br />
+          リピーターの方が大半を占めるクリニックということもあり、自分が行った施術や提案によって、日に日にキレイになっていく患者様から「このクリニックに通ってよかった」とポジティブな言葉を直接いただけるやりがいのある職場です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="person-section" id="person-section">
+    <div class="person-section__overlay">
+      <h2 class="person-section__heading">求める人材</h2>
+
+      <div class="person-section__content">
+        <div class="person-section__caption">
+          <h3 class="person-section__caption-title">患者様の悩みに親身になれる方</h3>
+          <p class="person-section__caption-subtitle">
+            「売上目標より、患者様の『ありがとう』を評価します。<br />
+            それが、このクリニックの唯一のノルマです。」
+          </p>
+        </div>
+        <div class="person-section__image">
+          <img src="/img/person_image_CS.JPG" alt="キャプション用イメージ" />
+        </div>
+      </div>
+
+      <div class="person-section__content person-section__content--reverse">
+        <div class="person-section__caption">
+          <h3 class="person-section__caption-title">美容医療が好きな方</h3>
+          <p class="person-section__caption-subtitle">
+            『自分も受けたい施術』しか提案しない。<br />
+            それが私たちのプライドであり、ルールです。
+          </p>
+        </div>
+        <div class="person-section__image">
+          <img src="/img/person_image_CS2.png" alt="キャプション用イメージ" />
+        </div>
+      </div>
+
+      <div class="person-section__content">
+        <div class="person-section__caption">
+          <h3 class="person-section__caption-title">チームワークを大切にできること</h3>
+          <p class="person-section__caption-subtitle">
+            心からの笑顔は、余裕のある職場から。<br />
+            スタッフが一番輝ける場所こそが、お客様を一番美しくできる場所だと信じています。
+          </p>
+        </div>
+        <div class="person-section__image">
+          <img src="/img/person_image3.png" alt="キャプション用イメージ" />
+        </div>
+      </div>
+
+      <div class="person-section__content person-section__content--reverse">
+        <div class="person-section__caption">
+          <h3 class="person-section__caption-title">
+            相手の意図をくみ取り、適切に<br />
+            対応できること
+          </h3>
+          <p class="person-section__caption-subtitle">
+            スタッフ同士で円滑に連携したり、患者さまの声にしっかり耳を傾けること、<br />
+            必要に応じてこちらから積極的に声をかけることも大切です。<br />
+            人とのコミュニケーションの重要性を理解し、実践できる方を歓迎します。
+          </p>
+        </div>
+        <div class="person-section__image">
+          <img src="/img/person_image5.png" alt="キャプション用イメージ" />
+        </div>
+      </div>
+
+      <div class="person-section__content">
+        <div class="person-section__caption">
+          <h3 class="person-section__caption-title">
+            10年後も通ってよかったと<br />
+            言ってもらえるような<br />
+            親身な対応ができること
+          </h3>
+          <p class="person-section__caption-subtitle">
+            当院のカウンセラーは単なる施術者ではなく、患者様の理想の未来を導く<br />
+            サポーターとして末長くお付き合いできるような方を求めています。
+          </p>
+        </div>
+        <div class="person-section__image">
+          <img src="/img/DSC09518-Edit.JPG" alt="キャプション用イメージ" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-job-section" id="person-features">
+    <h2 class="job-title">業務内容</h2>
+    <p class="job-caption">
+      最高レベルの美容医療を提供するため、<br />
+      スタッフ一人ひとりがそれぞれの業務でプロとして活躍しています。<br />
+      ここでは、受付カウンセラーの具体的な業務をご紹介します。
+    </p>
+
+    <div class="job-content">
+      <div class="job-list">
+        <ul>
+          <li>受付業務全般</li>
+          <li>カウンセリング</li>
+          <li>施術処置手続き</li>
+          <li>会計業務</li>
+        </ul>
+      </div>
+      <div class="job-image">
+        <img src="/img/cs-image-1.png" alt="受付業務イメージ" />
+      </div>
+    </div>
+
+    <div class="job-content reverse">
+      <div class="job-list">
+        <ul>
+          <li>電話・LINE対応</li>
+          <li>カルテ作成</li>
+          <li>予約管理</li>
+          <li>ローン審査などの手続き</li>
+        </ul>
+      </div>
+      <div class="job-image">
+        <img src="/img/person_image_CS.JPG" alt="電話対応イメージ" />
+      </div>
+    </div>
+  </section>
+
+  <section class="day-section">
+    <h2 class="day-title">1日の流れ</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="time-circle">09:50</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">朝礼・開院準備</h3>
+          <p class="timeline-caption">スタッフ全員で朝礼を行い、<br />当日の準備を整えます。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">10:00</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">受付開始</h3>
+          <p class="timeline-caption">来院チェックイン、カルテ準備、初診患者様へのご案内。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">11:00</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">カウンセリング対応</h3>
+          <p class="timeline-caption">施術説明や料金案内。不安や疑問を解消します。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">13:00</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">休憩</h3>
+          <p class="timeline-caption">しっかり休んで午後に備えます。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">14:00</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">午後の受付開始</h3>
+          <p class="timeline-caption">再診患者様の対応や予約調整を行います。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">17:00</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">施術後の患者様ケア</h3>
+          <p class="timeline-caption">アフターケア説明や次回予約案内。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">18:50</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">終礼・閉院準備</h3>
+          <p class="timeline-caption">片付け・翌日の予約確認を行い退勤。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-circle">19:00</div>
+        <div class="timeline-content">
+          <h3 class="timeline-heading">終礼・閉院準備</h3>
+          <p class="timeline-caption">片付け・翌日の予約確認を行い退勤。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="training-section" id="training-section">
+    <h2 class="training-title">研修制度</h2>
+    <div class="training-cards">
+      <div class="training-card">
+        <h3 class="training-subtitle">基礎研修</h3>
+        <p class="training-text">
+          全体研修として全職種統一で学んでほしいことを座学で勉強していただきます。<br />
+          身だしなみや言葉遣いなどのビジネスマナー / ビジネス基礎 / 接客・接遇<br />
+          クリニックで使用する機械の特徴 / システムやコースの説明など
+        </p>
+      </div>
+      <div class="training-card">
+        <h3 class="training-subtitle">OJT研修</h3>
+        <p class="training-text">
+          実際の業務現場で先輩社員に同行し、仕事の流れを学びながらスキルを身につけます。<br />
+          個別指導を通じて、不安を解消しながら実践的に成長していける研修です。
+        </p>
+      </div>
+      <div class="training-card">
+        <h3 class="training-subtitle">実践研修</h3>
+        <p class="training-text">
+          独り立ちに向けて実際の業務を一人で行い、習得度を確認します。<br />
+          必要に応じてフィードバックを受けながら、即戦力として成長する段階です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <RecruitmentSection jobTitle="受付/カウンセラー" sectionId="recruitment-section">
+        <tr>
+          <th>募集資格</th>
+          <td>
+            ■未経験OK！ブランクあり可！<br />
+            ■社会人経験3年以上<br />
+            ■基本的なPCスキル（Googleスプレットシート、電子カルテの記入等）<br />
+            業種・職種未経験OK！第二新卒歓迎！
+          </td>
+        </tr>
+        <tr>
+          <th>勤務地</th>
+          <td>
+            東京都中央区銀座7−3−7<br />
+            ブランエスパビル　13階
+          </td>
+        </tr>
+        <tr>
+          <th>勤務時間</th>
+          <td>9:50〜19:00（シフト制）</td>
+        </tr>
+        <tr>
+          <th>給与</th>
+          <td>
+            月給30万円～＋インセンティブ<br />
+            月給にはみなし残業代代（20時間分）を含みます。超過分別途支給<br />
+            研修期間3~6ヶ月あり<br />
+            インセンティブは本採用後より支給します。
+          </td>
+        </tr>
+        <tr>
+          <th>雇用形態</th>
+          <td>正社員</td>
+        </tr>
+        <tr>
+          <th>研修期間</th>
+          <td>6ヶ月 ※研修期間は有期雇用契約</td>
+        </tr>
+        <tr>
+          <th>福利厚生</th>
+          <td>
+            ・健康保険<br />
+            ・厚生年金<br />
+            ・産休育児休暇あり<br />
+            ・制服貸与
+          </td>
+        </tr>
+        <tr>
+          <th>その他休暇</th>
+          <td>
+            ・週休2日制度<br />
+            ・有給休暇(法定通り付与)<br />
+            ・年間公休108日~120日(月9日or月10日で選択可能）<br />
+            ・勤続1年以上で有休、公休とは別に1年ごとにリフレッシュ休暇３日付与
+          </td>
+        </tr>
+  </RecruitmentSection>
+
+  <FlowSteps />
+
+  <a href="#top" class="back-to-top">▲</a>
+</BaseLayout>

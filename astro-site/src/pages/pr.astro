@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import RecruitmentSection from '../components/RecruitmentSection.astro';
+import FlowSteps from '../components/FlowSteps.astro';
+---
+
+<BaseLayout title="【SNS広報】の募集" stylesheets={['recruit.css']}>
+  <PageHero backgroundImage="/img/dr-about-image3.jpg" titleEn="SNS広報" titleJa="PR" position="hero-center" />
+
+  <RecruitmentSection jobTitle="SNS広報">
+        <tr>
+          <th>募集資格</th>
+          <td>
+            ■未経験OK<br />
+            ■ブランク・無資格OK<br />
+            ☆SNS運用経験者大歓迎<br />
+            ☆コミュニケーション能力を活かしたい方大歓迎<br />
+            ☆写真や動画撮影のスキルを活かしたい方大歓迎
+          </td>
+        </tr>
+        <tr>
+          <th>勤務地</th>
+          <td>
+            東京都中央区銀座7−3−7<br />
+            ブランエスパビル　13階
+          </td>
+        </tr>
+        <tr>
+          <th>勤務時間</th>
+          <td>9:50〜19:00（シフト制）</td>
+        </tr>
+        <tr>
+          <th>給与</th>
+          <td>
+            月給30万円～＋インセンティブ<br />
+            月給にはみなし残業代代（20時間分）を含みます。超過分別途支給<br />
+            研修期間3~6ヶ月あり<br />
+            インセンティブは本採用後より支給します。
+          </td>
+        </tr>
+        <tr>
+          <th>雇用形態</th>
+          <td>正社員</td>
+        </tr>
+        <tr>
+          <th>研修期間</th>
+          <td>6ヶ月 ※研修期間は有期雇用契約</td>
+        </tr>
+        <tr>
+          <th>福利厚生</th>
+          <td>
+            ・健康保険<br />
+            ・厚生年金<br />
+            ・産休育児休暇あり<br />
+            ・制服貸与
+          </td>
+        </tr>
+        <tr>
+          <th>その他休暇</th>
+          <td>
+            ・週休2日制度<br />
+            ・有給休暇(法定通り付与)<br />
+            ・年間公休108日~120日(月9日or月10日で選択可能）<br />
+            ・勤続1年以上で有休、公休とは別に1年ごとにリフレッシュ休暇３日付与
+          </td>
+        </tr>
+  </RecruitmentSection>
+
+  <FlowSteps />
+
+  <a href="#top" class="back-to-top">▲</a>
+</BaseLayout>

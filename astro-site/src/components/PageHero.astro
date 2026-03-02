@@ -1,0 +1,17 @@
+---
+interface Props {
+  backgroundImage: string;
+  titleEn: string;
+  titleJa: string;
+  /** hero-center | hero-left */
+  position?: 'hero-center' | 'hero-left';
+}
+const { backgroundImage, titleEn, titleJa, position = 'hero-center' } = Astro.props;
+---
+<section>
+  <div class={`page-hero ${position}`} style={`background-image: url('${backgroundImage}');`}>
+    <h1>{titleEn}</h1>
+    <p>{titleJa}</p>
+  </div>
+  <slot />
+</section>

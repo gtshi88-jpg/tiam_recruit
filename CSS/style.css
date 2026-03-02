@@ -1,0 +1,1667 @@
+
+
+/* 自分の style.css に追記 */
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  font-family: 'Zen Old Mincho', sans-serif;
+}
+
+/* ナースページのファーストビュー */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/DSC01771-強化-NR\ 1.png);
+  background-size: cover;   /* 画面いっぱいに表示 */
+  background-position: center;
+  color: white;             /* テキストを白に */
+  display: flex;           
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+}
+
+.hero-title{
+ color: #222;
+ font-family: "Cormorant Garamond";
+ font-size: 96px;
+ font-style: normal;
+ font-weight: 500;
+ /* line-height: normalz; */
+ letter-spacing: 19.2px;
+ margin-left: 400px;
+}
+
+.hero-subtitle {
+ color: #222;
+ font-family: "Zen Old Mincho";
+ font-size: 32px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 6.4px;
+ margin-left: 400px;
+
+}
+
+/* カウンセラーページのファーストビュー */
+
+.CS-hero{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/CS-HERO.png);
+  background-size: cover;   /* 画面いっぱいに表示 */
+  background-position: center;
+  color: white;             /* テキストを白に */
+  display: flex;            /* 中央寄せ用 */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.CS-hero h1{
+  color: #222;
+ font-family: "Cormorant Garamond";
+ font-size: 96px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: normal;
+ letter-spacing: 19.2px;
+ text-align: left;
+}
+
+.CS-hero p {
+ color: #222;
+ font-family: "Zen Old Mincho";
+ font-size: 32px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 6.4px;
+ text-align: left;
+}
+
+.dr-hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/dr-hero.jpg);
+  background-size: cover;   /* 画面いっぱいに表示 */
+  background-position: center;
+  color: white;             /* テキストを白に */
+  display: flex;            /* 中央寄せ用 */
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+}
+
+
+
+.dr-hero h1{
+  color: #999;
+ font-family: "Cormorant Garamond";
+ font-size: 96px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: normal;
+ letter-spacing: 19.2px;
+ text-align: center;
+ 
+
+}
+
+.dr-hero p {
+  color: #222;
+  font-family: "Zen Old Mincho";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-align: center;
+}
+
+.reasons-hero{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  /* background-image: url(../img/top-image2.jpg); */
+  background-size: cover;   /* 画面いっぱいに表示 */
+  background-position: center;
+  color: white;             /* テキストを白に */
+  display: flex;            /* 中央寄せ用 */
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: center;
+  text-align: left;
+}
+
+.reasons-hero-title {
+  color: #222;
+ font-family: "Cormorant Garamond";
+ font-size: 96px;
+ font-style: normal;
+ font-weight: 500;
+ /* line-height: normalz; */
+ letter-spacing: 19.2px;
+ text-align: center;
+}
+
+.reasons-hero-subtitle{
+  color: #222;
+ font-family: "Zen Old Mincho";
+ font-size: 32px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 6.4px;
+ text-align: center;
+
+}
+
+/* ファーストビュー直下のインデックス */
+
+.page-index {
+  background: #f9f9f9;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+.page-index ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px; /* 各項目の間隔 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-index a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.page-index a:hover {
+  color: #0073e6; /* ホバー時にアクセントカラー */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/NS-hero-sp.png);
+    /* 中央揃えにするために flex設定を追加 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-title {
+    color: #222;
+    font-family: "Cormorant Garamond";
+    font-size: 48px; /* 64pxだとスマホには大きすぎるため調整推奨 */
+    margin-left: 0;  /* 250px から 0 に変更 */
+    margin-top: 0;   /* 必要に応じて調整 */
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-subtitle {
+    color: #222;
+    font-family: "Zen Old Mincho";
+    font-size: 20px; /* 32pxだと大きいので調整推奨 */
+    margin-left: 0;  /* 250px から 0 に変更 */
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* ドクターページ用ヒーローの修正も同様に行う必要があります */
+  .dr-hero .hero-title,
+  .dr-hero .hero-subtitle {
+     margin-left: 0; /* ここも0にする */
+     text-align: center;
+  }
+
+  
+.page-index ul {
+    flex-direction: column;
+    gap: 20px; /* 縦並び時は余白を少し調整 */
+    align-items: center;
+  }
+
+}
+
+.appeal-section {
+  padding: 60px 20px;
+  background: #fff;
+  height: auto;
+}
+
+.appeal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.appeal-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.appeal-images img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.appeal-text {
+  flex: 1;
+}
+
+.appeal-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #333;
+ font-family: "Zen Old Mincho";
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 9.6px;
+}
+
+.appeal-caption {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  color: #222;
+ font-family: "Noto Sans JP";
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 33px; /* 206.25% */
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .appeal-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .appeal-images {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .appeal-images img {
+    width: 48%;
+  }
+
+  .appeal-text {
+    margin-top: 20px;
+    margin: 20 auto;
+  }
+}
+
+.hope-background{
+  position: relative;
+  width: 100%;
+  height: 2306px;
+  background-image: url(../img/TIAM_LP_background\ 2.png);
+  background-size: cover;   /* 画面いっぱいに表示 */
+  background-position: center;
+  color: white;             /* テキストを白に */
+  display: flex;            /* 中央寄せ用 */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 500px;
+
+  /* 背景画像 */
+  background-image: url('images/clinic-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;                  /* 横並び */
+  justify-content: space-between; /* 左右に配置 */
+  align-items: center;            /* 縦の中央揃え */
+  height: 100%;
+  max-width: 1200px;              /* コンテンツ幅の制御 */
+  margin: 0 auto;
+  padding: 0 40px;                /* 余白 */
+  color: #fff;
+}
+
+.hero-text {
+  flex: 1;
+  background: rgba(0,0,0,0.4);    /* 半透明背景で文字の視認性UP */
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.person-section {
+  position: relative;
+  background: url('../img/TIAM_LP_background\ 2.png') no-repeat center center/cover;
+  min-height: 2300px; /* 背景の高さ調整 */
+  color: #fff;
+  padding: 40px 20px;
+  height: auto;
+}
+
+.person-section__overlay {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.person-section__heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* 見出しと下コンテンツの余白 */
+  color: #FFF;
+ font-family: "Zen Old Mincho";
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 9.6px;
+}
+
+.person-section__content {
+  display: flex;
+  align-items: flex-start; /* 上揃え */
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.person-section__caption {
+  flex: 1;
+}
+
+.person-section__caption-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #FFF;
+ font-family: "Zen Old Mincho";
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 8px;
+
+}
+
+.person-section__caption-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: #FFF;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 206.25% */
+}
+
+.person-section__image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.person-section__image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.person-section__content--reverse {
+  flex-direction: row-reverse; /* 左右反転 */
+}
+
+/* レスポンシブ対応 */
+ @media (max-width: 768px) {
+  .person-content {
+  flex-direction: column;
+  text-align: center;
+ }
+  .person-text {
+  text-align: center;
+  }
+  .person-section__content {
+  flex-direction: column;
+  }
+}
+
+/* Person-Features セクション */
+.person-features {
+  background: url('../img/TIAM_LP_background\ 2.png') no-repeat center center/cover;
+  padding: 80px 20px;
+  color: #333;
+}
+
+.person-features .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.work-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #fff; /* 背景画像に合わせて調整 */
+  font-family: "Zen Old Mincho";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 9.6px;
+}
+
+.section-subtitle {  
+ text-align: center;
+ font-size: 1.5rem;
+ margin-bottom: 50px;
+ color: #fff; /* 背景画像に合わせて調整 */
+
+
+}
+
+/* グリッド設定 */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.feature-item {
+  background: rgba(333, 333, 333);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+
+.feature-subtitle {
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 20px;
+  color: #666;
+  color: #333;
+  font-family: "Noto Sans JP";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px; /* 143.75% */
+  letter-spacing: 3.2px;
+}
+
+.feature-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr; /* 1列にする */
+  }
+}
+
+.cs-job-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  background: url('../img/TIAM_LP_background\ 2.png') no-repeat center center/cover;
+}
+
+.job-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #FFF;
+  color: #FFF;
+font-family: "Zen Old Mincho";
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 9.6px;
+
+}
+
+.job-caption {
+  font-size: 1rem;
+  color: #FFF;
+  margin-bottom: 40px;
+}
+
+.job-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  gap: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.job-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.job-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.job-list ul li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 40px;
+color: #FFF;
+font-family: "Zen Old Mincho";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 7.6px;
+
+}
+
+/* ☑ の装飾 */
+.job-list ul li::before {
+  content: "☑";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #009688; /* アクセントカラー */
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1;
+  
+}
+
+.job-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .job-content,
+  .job-content.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .job-list ul {
+    text-align: center;
+  }
+
+  .job-list ul li {
+    padding-left: 30px;
+    
+  }
+}
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .job-row,
+  .job-row.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .job-text {
+    order: 2;
+  }
+
+  .job-image {
+    order: 1;
+  }
+}
+
+.day-flow {
+ text-align: center;
+ color: #222; 
+ font-family: "Zen Old Mincho";
+ font-size: 32px;
+}
+
+.day-flow-cap {
+ width: 838px;
+ height: 55px;
+ flex-shrink: 0;
+ color: #222;
+ font-family: "Noto Sans JP";
+ font-size: 20px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 30px; /* 150% */
+ letter-spacing: 4px;
+ text-align: center;
+}
+
+.day-section {
+  height: auto;
+  /* padding: 80px 20px; */
+  background: #fafafa;
+}
+
+.day-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #222;
+ font-family: "Zen Old Mincho";
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 9.6px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 800px;
+ margin: 0 auto;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.time-circle {
+  min-width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #BFA455; /* 青色例 */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  color: #FFF;
+ font-family: "Noto Sans JP";
+ font-size: 12px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: 30px; /* 125% */
+ letter-spacing: 3.12px;
+ margin-top: 30px;
+ margin-right: 30px;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-heading {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #222;
+ font-family: "Zen Old Mincho";
+
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 6.4px;
+}
+
+.timeline-caption {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+  color: #222;
+ font-family: "Noto Sans JP";
+ font-style: normal;
+ font-weight: 400;
+ line-height: 30px; /* 150% */
+ letter-spacing: 4px;
+}
+
+.day-section {
+  position: relative;
+  padding: 60px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+
+
+
+
+.day-section h2,
+.day-section p {
+  position: relative;
+  z-index: 1;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center; /* これを追加 */
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;       /* 最大幅に合わせる */
+  max-width: 600px;  /* 調整したい横幅 */
+}
+
+@media (max-width: 768px) {
+  .day-section {
+    background: none; /* スマホでは背景画像を外す */
+    
+  }
+  .timeline{
+    margin: auto;
+   margin-bottom: 40px;
+  }
+}
+
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 2000px;
+
+  /* 背景画像 */
+  background-image: url('../img/TIAM_LP_background\ 2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;                  /* 横並び */
+  justify-content: space-between; /* 左右に配置 */
+  align-items: center;            /* 縦の中央揃え */
+  height: 100%;
+  max-width: 1200px;              /* コンテンツ幅の制御 */
+  margin: 0 auto;
+  padding: 0 40px;                /* 余白 */
+  color: #fff;
+}
+
+.hero-text {
+  flex: 1;
+  background: rgba(0,0,0,0.4);    /* 半透明背景で文字の視認性UP */
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.recruitment-section {
+  padding: 60px 20px;
+  background: #F5F5F5;
+}
+
+.jobsection-title {
+  text-align: center; /* 左揃え */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000;
+
+font-family: "Zen Old Mincho";
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 11.2px;
+}
+
+.job-titlebox {
+  
+  width: 58%;
+  margin: 0 auto;
+  padding: 12px 16px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; /* 左揃え */
+  margin-bottom: 20px;
+  color: #FFF;
+  font-family: "Zen Old Mincho";
+  font-size: 32px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+letter-spacing: 6.4px;
+background: linear-gradient(90deg, #222 38.94%, #888 100%);
+}
+
+/* 研修制度セクション */
+.training-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.training-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+  color: #000;
+font-family: "Zen Old Mincho";
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 11.2px;
+}
+
+/* カード配置 */
+.training-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* カードデザイン */
+.training-card {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.training-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* 小見出し */
+.training-subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #0077b6;
+  border-left: 4px solid #0077b6;
+  padding-left: 8px;
+}
+
+/* テキスト */
+.training-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  font-family: "Noto Sans JP";
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 30px; /* 150% */
+ letter-spacing: 4px;
+  
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .training-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .training-card {
+    width: 90%;
+  }
+
+  .job-titlebox {
+    width: 90%;
+  }
+}
+
+.recruitment-table {
+  width: 60%; /* テーブル幅 */
+  margin: 0 auto; /* 中央揃え */
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.recruitment-table th,
+.recruitment-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-family: "Noto Sans JP";
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 30px; /* 150% */
+ letter-spacing: 4px;
+}
+
+.recruitment-table th {
+  width: 25%;
+  background-color: #fafafa;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .job-title{
+    width: 90%;
+  }
+
+  .recruitment-table {
+  width: 95%; /* テーブル幅 */
+  margin: 0 auto; /* 中央揃え */
+
+}
+}
+.flow-section {
+  background-image: url('../img/TIAM_LP_background_White\ 1.png'); /* 前のセクションと同じ背景 */
+  min-height: 1300px;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+}
+
+.flow-section .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #000;
+  font-family: "Zen Old Mincho";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 11.2px;
+}
+
+.flow-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* 各ステップ間の余白 */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.flow-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.flow-icon {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.flow-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin: 0 100px;
+}
+
+
+.flow-content {
+  flex: 1;
+  text-align: left;
+  margin: 0 100px;
+}
+
+.flow-heading {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #000;
+  font-family: "Zen Old Mincho";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 8.8px;
+  
+}
+
+.flow-caption {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 20px;
+  color: #333;
+  color: #000;
+ font-family: "Noto Sans JP";
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 30px; /* 150% */
+ letter-spacing: 4px;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .flow-step {
+    flex-direction: column;  /* アイコンの横並び → 縦並び */
+    align-items: center;     /* 中央寄せ */
+    text-align: center;
+  }
+
+  .flow-content {
+    margin: 0;   /* 横の余白をリセット */
+    text-align: center;
+  }
+
+  .flow-icon {
+    margin: 0;   /* アイコンの位置もリセット */
+  }
+
+  .flow-caption {
+    margin: 10px 0; /* 読みやすい余白に調整 */
+    font-size: 14px; /* モバイルでは少し小さめ */
+    letter-spacing: 2px;
+    line-height: 1.6;
+  }
+}
+
+.flow-entry {
+  text-align: center;   /* 中央揃え */
+  /* 上に余白をつける */
+  margin-bottom: 100px;
+  margin-top: 200px;
+}
+
+.entry-btn {
+  display: inline-block;
+  background-color:  #BAB54A;; /* ボタンの色 */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-flex;
+ padding: 14px 127px 13px 126px;
+ justify-content: center;
+ align-items: center;
+}
+
+.entry-btn:hover {
+  background-color: #005bb5; /* ホバー時に濃くする */
+}
+
+.footer {
+  background: linear-gradient(90deg, #535353 0%, #B9B9B9 100%);
+  padding: 40px 20px 20px;
+  font-size: 14px;
+  color: #333;
+  height: auto;
+}
+
+.footer-top {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #FFF;
+ font-family: "Zen Old Mincho";
+ font-size: 24px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 4.8px;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+ font-family: "Zen Old Mincho";
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 3.2px;
+}
+
+.footer-column li {
+  margin-bottom: 6px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.back-to-top {
+  position: fixed;        /* 常に表示 */
+  right: 20px;            /* 右からの距離 */
+  bottom: 20px;           /* 下からの距離 */
+  background: #333;       /* 背景色 */
+  color: #fff;            /* 文字色 */
+  padding: 10px 15px;     /* ボタン内余白 */
+  border-radius: 50%;     /* 丸いボタンに */
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;          /* 最前面に表示 */
+  transition: opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+.back-to-top:hover {
+  opacity: 1;             /* ホバーで濃く */
+}
+
+/* ------------------------------
+   フッター：スマホ最適化
+   ------------------------------ */
+@media (max-width: 576px) {
+
+  /* 全体の余白を圧縮 */
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  /* ロゴ縮小 */
+  .footer-logo img {
+    width: 120px;   /* PCよりひと回り小さく */
+    height: auto;
+  }
+
+  /* ナビゲーションのフォントサイズ最適化 */
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-column h4 {
+    font-size: 16px;       /* PCより小さく */
+    margin-bottom: 8px;
+  }
+
+  .footer-column ul li a {
+    font-size: 14px;       /* リンク文字 */
+    line-height: 1.6;
+  }
+
+  /* コピーライト */
+  .footer-bottom p,
+  .footer-bottom a {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+  }
+}
+
+/* style.css の一番下に追記 */
+
+@media (max-width: 768px) {
+
+  /* =========================================
+     1. テキスト・文章の共通最適化
+     ========================================= */
+  /* スマホではPC用の強制改行<br>をすべて無効化 */
+  .appeal-caption br,
+  .person-section__caption-subtitle br,
+  .feature-subtitle br,
+  .timeline-caption br,
+  .training-text br,
+  .flow-caption br,
+  .recruitment-table td br {
+    display: none;
+  }
+
+  /* 文章を「両端揃え」にして、新聞のような読みやすさに */
+  .appeal-caption,
+  .person-section__caption-subtitle,
+  .feature-subtitle,
+  .timeline-caption,
+  .training-text,
+  .flow-caption {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    line-height: 1.8;
+    font-size: 14px; /* スマホに適した文字サイズ */
+  }
+
+  /* =========================================
+     2. 求める人材 (Person Section)
+     ========================================= */
+  /* 画像とテキストを縦並びに。画像が上に来るように設定 */
+  .person-section__content,
+  .person-section__content.person-section__content--reverse {
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .person-section__image img {
+    width: 100%;
+    height: 250px;       /* 高さを統一 */
+    object-fit: cover;   /* 画像をトリミングして枠に合わせる */
+    border-radius: 12px;
+  }
+
+  .person-section__caption-title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.4;
+  }
+
+  /* =========================================
+     3. 1日の流れ (Timeline)
+     ========================================= */
+  .timeline {
+    padding: 0 10px;
+  }
+
+  .timeline-item {
+    flex-direction: column; /* 縦並び */
+    align-items: center;
+    background: #fff;       /* 背景色をつけてカード化 */
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* 軽い影で浮き上がらせる */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .time-circle {
+    margin: 0 auto 15px; /* 中央寄せ */
+    width: 70px;
+    height: 70px;
+    font-size: 14px;
+  }
+
+  .timeline-heading {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  /* =========================================
+     4. 募集要項テーブル (Recruitment Table)
+     ========================================= */
+  /* 表の構造をブロック崩し（カード化） */
+  .recruitment-table, 
+  .recruitment-table tbody, 
+  .recruitment-table tr, 
+  .recruitment-table th, 
+  .recruitment-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .recruitment-table {
+    box-shadow: none; /* 大枠の影は消す */
+    background: transparent;
+  }
+
+  .recruitment-table tr {
+    background: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .recruitment-table th {
+    background: #f4f4f4; /* 見出しの背景色 */
+    color: #333;
+    font-weight: bold;
+    padding: 12px 15px;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .recruitment-table td {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: left;
+  }
+}
+
+/* style.css の一番下に追記 */
+
+@media (max-width: 768px) {
+
+  /* --- 1. セクション全体の調整 --- */
+  .flow-section {
+    padding: 60px 20px;
+    height: auto;      /* 固定の高さを解除 */
+    min-height: auto;  /* 必要に応じて伸び縮みさせる */
+  }
+
+  .flow-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* ステップ間の隙間 */
+  }
+
+  /* --- 2. 各ステップを「白いカード」にする --- */
+  .flow-step {
+    background: #fff;       /* 白背景で文字を読みやすく */
+    border-radius: 12px;    /* 角丸 */
+    padding: 30px 20px;     /* 内側の余白 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* 浮き上がるような影 */
+    
+    /* 縦並び設定 */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;     /* 矢印（▼）の位置基準 */
+    width: 100%;
+    margin: 0;              /* 余計なマージン削除 */
+  }
+
+  /* --- 3. ステップ間の矢印（▼）を追加 --- */
+  /* 最後のステップ以外に下向き矢印を表示 */
+  .flow-step:not(:last-child)::after {
+    content: "▼";
+    position: absolute;
+    bottom: -28px; /* カードの外側下に配置 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #BAB54A; /* アクセントカラー（金色） */
+    font-size: 18px;
+  }
+
+  /* --- 4. アイコンの調整 --- */
+  .flow-icon {
+    margin: 0 0 15px 0; /* アイコン下の余白 */
+    width: 60px;        /* アイコンの枠サイズ固定 */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flow-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* --- 5. テキスト周りの整理 --- */
+  .flow-content {
+    margin: 0;
+    width: 100%;
+  }
+
+  .flow-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee; /* タイトルの下に薄い線 */
+    display: block;
+    color: #222;
+    letter-spacing: 2px;
+  }
+
+  /* --- 6. 説明文の読みやすさ改善 --- */
+  .flow-caption {
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify; /* 両端揃え（左寄せに近い）で読みやすく */
+    color: #444;
+    margin: 0;
+  }
+
+  /* PC用の強制改行<br>を無効化して自然な文章にする */
+  .flow-caption br {
+    display: none;
+  }
+}
+
+/* style.css の一番下に追記（以前のコードを上書きしてください） */
+
+/* =========================================
+   スマホ用ファーストビュー画像の表示位置調整
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* --- 医師ページ (Dr.html) --- */
+  /* 先生は「右側」に映っているので右寄せにする */
+  .dr-hero {
+    background-image: url(../img/dr-hero.jpg) !important; /* PC画像をそのまま使用 */
+    background-position: 80% center !important; /* 右から20%の位置を中心に */
+    height: 400px; /* スマホで縦長になりすぎないよう高さを調整 */
+  }
+
+  /* --- 看護師ページ (Nurse.html) --- */
+  /* 看護師さんは「左側」に映っているので左寄せにする */
+  .hero {
+    background-image: url('../img/DSC01771-強化-NR 1.jpg') !important;
+    background-position: 20% center !important; /* 左から20%の位置を中心に */
+    height: 400px;
+  }
+
+  /* --- カウンセラーページ (CS.html) --- */
+  /* カウンセラーさんは「左側」に映っているので左寄せにする */
+  .CS-hero {
+    background-image: url(../img/CS-HERO.jpg) !important;
+    background-position: 25% center !important; /* 左から25%の位置を中心に */
+    height: 400px;
+  }
+  
+  /* --- 共通：文字の読みやすさ調整 --- */
+  /* 背景の拡大で文字が見えにくくなる場合の対策（文字に影をつける） */
+  .dr-hero h1, .dr-hero p,
+  .hero h1, .hero p,
+  .CS-hero h1, .CS-hero p {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* 文字の周りに影を落として視認性UP */
+    width: 100%; /* 文字幅の制限を解除 */
+    margin-left: 0; /* 余白リセット */
+    text-align: center; /* 中央揃え */
+  }
+}
+
+/* style.css の一番下をこれに書き換え */
+
+/* style.css の一番下の内容を、以下にすべて書き換えてください */
+
+@media (max-width: 768px) {
+
+  /* --- 医師ページ --- */
+  .dr-hero {
+    /* ここも念のため英語名推奨ですが、今はそのままでOKなら維持 */
+    background-image: url("../img/dr-hero.jpg") !important;
+    background-position: 80% center !important;
+    height: 400px;
+  }
+
+  /* --- 看護師ページ（ここを修正！） --- */
+  .hero {
+    /* 日本語やスペースを含まないシンプルな名前に変更 */
+    background-image: url("../img/nurse-sp.jpg") !important;
+    background-position: 20% center !important;
+    height: 400px;
+  }
+
+  /* --- カウンセラーページ --- */
+  .CS-hero {
+    background-image: url("../img/CS-HERO.jpg") !important;
+    background-position: 25% center !important;
+    height: 400px;
+  }
+  
+  /* --- 共通設定 --- */
+  .dr-hero h1, .dr-hero p,
+  .hero h1, .hero p,
+  .CS-hero h1, .CS-hero p {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* style.css の一番下をこれに書き換えてください */
+
+@media (max-width: 768px) {
+
+  /* =========================================
+     ファーストビュー画像の調整
+     ========================================= */
+
+  /* --- 医師ページ --- */
+  .dr-hero {
+    background-image: url("../img/dr-hero.jpg") !important;
+    background-position: 80% center !important;
+    height: 400px;
+  }
+
+  /* --- 看護師ページ --- */
+  .hero {
+    background-image: url("../img/nurse-sp.jpg") !important;
+    background-position: 20% center !important;
+    height: 400px;
+  }
+
+  /* --- カウンセラーページ（ここを修正！） --- */
+  .CS-hero {
+    /* 手順1で変更した小文字のファイル名を指定 */
+    background-image: url("../img/cs-hero-sp.jpg") !important; 
+    
+    /* 人物が中心に来るように位置調整（必要に応じて 数値% を変えてください） */
+    background-position: center top !important; 
+    height: 400px;
+  }
+  
+  /* =========================================
+     テキストのサイズと配置の調整
+     ========================================= */
+
+  /* 共通：配置と影の設定 */
+  .dr-hero h1, .dr-hero p,
+  .hero h1, .hero p,
+  .CS-hero h1, .CS-hero p {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* 影をつけて読みやすく */
+    width: 100%;
+    margin-left: 0;
+    text-align: center; /* 中央揃え */
+  }
+
+  /* 英語タイトル（Doctor, Nurse, Counselor）のサイズ調整 */
+  .dr-hero h1,
+  .hero-title,   /* 看護師ページはクラス名が違います */
+  .CS-hero h1 {
+    font-size: 42px !important; /* PCの96pxから大幅に縮小 */
+    letter-spacing: 4px !important; /* 文字間隔も狭める */
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  /* 日本語サブタイトル（医師、看護師...）のサイズ調整 */
+  .dr-hero p,
+  .hero-subtitle,
+  .CS-hero p {
+    font-size: 18px !important; /* PCの32pxから縮小 */
+    letter-spacing: 4px !important;
+  }
+}
