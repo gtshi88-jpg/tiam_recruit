@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "prebuild": "rm -rf public/css public/img public/js && cp -r ../CSS public/css && cp -r ../img public/img && cp -r ../js public/js",
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
     "preview": "astro preview",

@@ -1,0 +1,218 @@
+/* css/reasons.css - 選ばれる理由ページ専用 */
+
+/* --- Hero Section --- */
+.reasons-hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('../img/reason-hero.jpg') no-repeat center center/cover; /* 画像パスは適宜調整 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.reasons-hero-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 80px;
+  margin: 0;
+  line-height: 1;
+}
+
+.reasons-hero-subtitle {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 24px;
+  margin-top: 10px;
+  letter-spacing: 0.2em;
+}
+
+/* --- Summary (5つの理由) --- */
+.reasons-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.reasons-summary {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+}
+
+.reason-item {
+  background: #fff;
+  width: 200px;
+  padding: 30px 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-family: "Zen Old Mincho", serif;
+  font-weight: bold;
+  border-top: 3px solid #BFA455;
+}
+
+/* --- Detail (詳細) --- */
+.reasons-detail {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reason-box {
+  margin-bottom: 80px;
+}
+
+.reason-number {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  color: #e0e0e0;
+  text-align: center;
+  margin-bottom: -30px;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.reason-content {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  gap: 40px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.reason-content.right {
+  flex-direction: row-reverse;
+}
+
+.reason-text {
+  flex: 1;
+}
+
+.reason-text h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: "Zen Old Mincho", serif;
+  color: #333;
+  border-bottom: 2px solid #BFA455;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.reason-text p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.reason-img {
+  flex: 1;
+}
+
+.reason-img img {
+  width: 100%;
+  border-radius: 8px;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* --- Survey Section (アンケート) --- */
+.survey-section {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.survey-title {
+  font-size: 28px;
+  font-family: "Zen Old Mincho", serif;
+  margin-bottom: 10px;
+}
+
+.survey-subtitle {
+  font-size: 16px;
+  color: #BFA455;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.survey-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+.survey-item {
+  width: 300px;
+  text-align: center;
+}
+
+.survey-question {
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* --- 修正後の .circle クラス --- */
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* ▼ 以前の border 指定を削除し、文字色を黒に変更 */
+  /* border: 5px solid #BFA455; */ 
+  color: #333; 
+  
+  font-size: 30px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  
+  /* ▼ グラフが読み込まれるまでのデフォルト背景 */
+  background: #e0e0e0; 
+
+}
+
+.flow-entry {
+  text-align: center;
+}
+
+.entry-btn {
+  display: inline-block;
+  background-color: #BAB54A;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 100px;
+  border-radius: 50px;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(186, 181, 74, 0.4);
+}
+
+.entry-btn:hover {
+  background-color: #9A833A;
+  transform: translateY(-3px);
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .reasons-hero-title { font-size: 50px; }
+  .reason-content, .reason-content.right {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .reasons-summary { flex-direction: column; align-items: center; }
+  .reason-item { width: 100%; }
+  .entry-btn { padding: 15px 40px; width: 90%; }
+}

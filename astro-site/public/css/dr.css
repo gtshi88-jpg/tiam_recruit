@@ -1,0 +1,136 @@
+.dr-about-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.dr-image img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.dr-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.dr-columns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.dr-col {
+  flex: 1;
+  text-align: center;
+}
+
+.dr-col img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+}
+
+.dr-message {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+/* ▼ レスポンシブ対応 */
+@media (max-width: 768px) {
+  .dr-columns {
+    flex-direction: column;
+  }
+}
+
+.process-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.process-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.process-step {
+  position: relative;
+  background: #e0e0e0;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 6px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.process-step.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.step-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: #b0bec5;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.step-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step-body ul li {
+  margin: 5px 0;
+}
+
+/* レスポンシブ対応: スマホ時はpaddingを小さくして縦幅を狭く */
+@media screen and (max-width: 768px) {
+  .process-step {
+    padding: 15px;
+    margin: 20px auto;
+    font-size: 14px;
+  }
+
+  .process-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
